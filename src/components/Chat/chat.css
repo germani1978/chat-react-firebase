@@ -1,0 +1,139 @@
+.chat {
+    flex: 2;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+
+    .top {
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            img {
+                width: 60px;
+                border-radius: 50%;
+            }
+
+            .texts {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                p {
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 12px;
+                    color: lightgray;
+                }
+            }
+        }
+
+        .icons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+    .center {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        overflow: scroll;
+        scrollbar-color: rgb(10, 17, 43) transparent;
+        scrollbar-width: thin;
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 70%;
+
+            .text {
+                background-color: whitesmoke;
+                color: black;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+
+            img {
+                height: 150px;
+                border-radius: 8px;
+            }
+        }
+
+        .own {
+            align-self: flex-end;
+
+            .text {
+                background-color: rgb(67, 98, 211);
+                color: white;
+            }
+
+            .img {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 15px 15px 15px;
+
+        img {
+            width: 25px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input {
+            flex: 1;
+            background-color: rgba(10, 17, 43, 0.8);
+            padding: 13px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(67, 98, 211);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
